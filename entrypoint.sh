@@ -20,7 +20,7 @@ if [ $exit_code -ne 0 ]; then
     echo >> $LYCHEE_OUT
     cat "$LYCHEE_TMP" >> $LYCHEE_OUT
     echo >> $LYCHEE_OUT
-    echo "${GITHUB_WORKFLOW_URL}" >> $LYCHEE_OUT
+    echo "[Full Github Action output](${GITHUB_WORKFLOW_URL})" >> $LYCHEE_OUT
 fi
 
 # Output to console
